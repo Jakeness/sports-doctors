@@ -1,0 +1,6 @@
+plugin:
+    name: 'websiteglobal.ausstorelocator::lang.plugin.name'
+    description: 'websiteglobal.ausstorelocator::lang.plugin.description'
+    author: 'Website Global'
+    icon: oc-icon-thumb-tack
+    homepage: ''

@@ -1,0 +1,46 @@
+[staticPage]
+useContent = 1
+default = 0
+==
+<html>
+
+   <head>
+
+       {% partial "headerScript" %}
+
+    </head>
+
+    <body>
+
+
+        <!-- HEADER -->
+		{% partial "header" %}
+
+        <!-- MASTERSLIDER -->
+
+        <section class="inner heroSlider" style="background-image: url({{ 'assets/images/template/innerBanner_soccer.jpg'|theme }});">
+
+        </section>
+
+
+        <section class="pageContent">
+            <div class="container">
+                <div class="col-xs-12">
+                    {% component 'staticPage' %}
+                </div>
+            </div>
+
+
+        </section>
+
+
+        <div classs="clear"></div>
+
+        
+        {% partial "footer" %}        
+
+        {% partial "footerScript" %}
+
+    </body>
+
+</html>

@@ -1,0 +1,11 @@
+items:
+    -
+        title: 'All Pages'
+        type: all-static-pages
+        code: ''
+        replace: '1'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+name: 'Main Menu'
