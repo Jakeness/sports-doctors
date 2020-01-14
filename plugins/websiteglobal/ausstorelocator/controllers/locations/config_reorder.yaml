@@ -1,0 +1,4 @@
+title: Locations
+modelClass: WebsiteGlobal\AusStoreLocator\Models\Location
+toolbar:
+    buttons: reorder_toolbar

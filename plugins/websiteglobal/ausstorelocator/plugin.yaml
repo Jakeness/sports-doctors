@@ -4,3 +4,8 @@ plugin:
     author: 'Website Global'
     icon: oc-icon-thumb-tack
     homepage: ''
+navigation:
+    main-menu-item:
+        label: Locations
+        url: websiteglobal/ausstorelocator/locations
+        icon: icon-map-marker

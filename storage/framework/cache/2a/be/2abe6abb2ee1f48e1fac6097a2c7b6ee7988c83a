@@ -1,0 +1,41 @@
+1578988078a:1:{s:9:"index.htm";a:7:{s:8:"fileName";s:9:"index.htm";s:7:"content";s:1063:"[viewBag]
+title = "Home"
+url = "/"
+layout = "Home"
+is_hidden = 0
+navigation_hidden = 0
+==
+<div class="col-xs-12 col-sm-5 col-md-5 col-lg-4 title">
+
+	<h1>WELCOME</h1><span>TO SPORTS DOCTORS AUSTRALIA</span>
+
+	<p><img src="/themes/sports-doctors/assets/images/template/title_icons.png" class="fr-fic fr-dii"></p>
+</div>
+<div class="col-xs-12 col-sm-7 col-md-7 col-lg-8">
+
+	<p><strong>Sports Doctors Australia is an association of doctors who have an interest in and expertise in the practice of sports and exercise medicine. Members come from a wide range of areas within medicine, including GPs, Surgeons, Radiologists and many others.</strong></p>
+
+	<p>Our aim is to provide an association of doctors who are interested in the provision of high level care for all sporting people, irrespective of type of activity or level of competition. As such, we provide a high level of care for elite athletes through to the weekend warrior and also include the non-exercising person who may want to improve their exercise level or deal with an injury.</p>
+</div>";s:5:"mtime";i:1578970504;s:6:"markup";s:973:"<div class="col-xs-12 col-sm-5 col-md-5 col-lg-4 title">
+
+	<h1>WELCOME</h1><span>TO SPORTS DOCTORS AUSTRALIA</span>
+
+	<p><img src="/themes/sports-doctors/assets/images/template/title_icons.png" class="fr-fic fr-dii"></p>
+</div>
+<div class="col-xs-12 col-sm-7 col-md-7 col-lg-8">
+
+	<p><strong>Sports Doctors Australia is an association of doctors who have an interest in and expertise in the practice of sports and exercise medicine. Members come from a wide range of areas within medicine, including GPs, Surgeons, Radiologists and many others.</strong></p>
+
+	<p>Our aim is to provide an association of doctors who are interested in the provision of high level care for all sporting people, irrespective of type of activity or level of competition. As such, we provide a high level of care for elite athletes through to the weekend warrior and also include the non-exercising person who may want to improve their exercise level or deal with an injury.</p>
+</div>";s:4:"code";N;s:7:"viewBag";a:5:{s:5:"title";s:4:"Home";s:3:"url";s:1:"/";s:6:"layout";s:4:"Home";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";}s:12:"parsedMarkup";s:973:"<div class="col-xs-12 col-sm-5 col-md-5 col-lg-4 title">
+
+	<h1>WELCOME</h1><span>TO SPORTS DOCTORS AUSTRALIA</span>
+
+	<p><img src="/themes/sports-doctors/assets/images/template/title_icons.png" class="fr-fic fr-dii"></p>
+</div>
+<div class="col-xs-12 col-sm-7 col-md-7 col-lg-8">
+
+	<p><strong>Sports Doctors Australia is an association of doctors who have an interest in and expertise in the practice of sports and exercise medicine. Members come from a wide range of areas within medicine, including GPs, Surgeons, Radiologists and many others.</strong></p>
+
+	<p>Our aim is to provide an association of doctors who are interested in the provision of high level care for all sporting people, irrespective of type of activity or level of competition. As such, we provide a high level of care for elite athletes through to the weekend warrior and also include the non-exercising person who may want to improve their exercise level or deal with an injury.</p>
+</div>";}}

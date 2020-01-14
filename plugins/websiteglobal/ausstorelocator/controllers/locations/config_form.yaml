@@ -1,0 +1,10 @@
+name: Locations
+form: $/websiteglobal/ausstorelocator/models/location/fields.yaml
+modelClass: WebsiteGlobal\AusStoreLocator\Models\Location
+defaultRedirect: websiteglobal/ausstorelocator/locations
+create:
+    redirect: 'websiteglobal/ausstorelocator/locations/update/:id'
+    redirectClose: websiteglobal/ausstorelocator/locations
+update:
+    redirect: websiteglobal/ausstorelocator/locations
+    redirectClose: websiteglobal/ausstorelocator/locations

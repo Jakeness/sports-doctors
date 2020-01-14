@@ -1,0 +1,15 @@
+title: Locations
+modelClass: WebsiteGlobal\AusStoreLocator\Models\Location
+list: $/websiteglobal/ausstorelocator/models/location/columns.yaml
+recordUrl: 'websiteglobal/ausstorelocator/locations/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: true
+showCheckboxes: true
+defaultSort:
+    column: name
+    direction: asc
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

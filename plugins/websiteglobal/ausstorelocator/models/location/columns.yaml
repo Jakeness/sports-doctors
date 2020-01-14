@@ -1,0 +1,11 @@
+columns:
+    name:
+        label: 'Location Name'
+        type: text
+        searchable: true
+        sortable: true
+    address:
+        label: Address
+        type: text
+        searchable: true
+        sortable: true
