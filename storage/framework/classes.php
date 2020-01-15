@@ -102,4 +102,5 @@
   'ADemin\\StoreLocator\\Components\\StoreLocator' => 'plugins/ademin/storelocator/components/StoreLocator.php',
   'WebsiteGlobal\\AusStoreLocator\\Components\\AusStoreLocator' => 'plugins/websiteglobal/ausstorelocator/components/AusStoreLocator.php',
   'WebsiteGlobal\\AusStoreLocator\\FormWidgets\\AddressFinder' => 'plugins/websiteglobal/ausstorelocator/formwidgets/AddressFinder.php',
+  'WebsiteGlobal\\AusStoreLocator\\FormWidgets\\AusAddressFinder' => 'plugins/websiteglobal/ausstorelocator/formwidgets/AusAddressFinder.php',
 );

@@ -28,7 +28,7 @@ class AusAddressFinder extends FormWidgetBase
     /**
      * {@inheritDoc}
      */
-    public $defaultAlias = 'addressfinder';
+    public $defaultAlias = 'ausaddressfinder';
 
     protected $fieldMap;
     protected $countryRestriction;
@@ -49,7 +49,7 @@ class AusAddressFinder extends FormWidgetBase
     {
         $this->prepareVars();
 
-        return $this->makePartial('addressfinder');
+        return $this->makePartial('ausaddressfinder');
     }
 
     /**
