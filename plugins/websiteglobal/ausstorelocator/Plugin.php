@@ -26,9 +26,9 @@ class Plugin extends PluginBase
     public function registerFormWidgets()
     {
         return [
-            'WebsiteGlobal\AusStoreLocator\FormWidgets\AddressFinder' => [
+            'WebsiteGlobal\AusStoreLocator\FormWidgets\AusAddressFinder' => [
                 'label' => 'Address Finder',
-                'code'  => 'addressfinder'
+                'code'  => 'ausaddressfinder'
             ]
         ];
     }

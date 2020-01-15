@@ -14,6 +14,6 @@ Route::get('/api/stores.json', function () {
 
 Route::get('/map', function () {
     $html = file_get_contents('plugins/websiteglobal/ausstorelocator/components/ausstorelocator/map.htm');
-    $apiKey = Config::get('websiteglobal.storelocator::googleMapsKey');
-    return str_replace('%api_key%', $apiKey, $html) ;
+    $apiKey = 'AIzaSyCQAYsB_fwTY5I28kdvnPW1IiCO_uUYyvs';
+    return str_replace('%api_key%', $apiKey, $html);
 });

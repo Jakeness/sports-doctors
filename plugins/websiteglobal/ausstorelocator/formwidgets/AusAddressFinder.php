@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Config;
  *           latitude: latitude
  *           longitude: longitude
  *           city: city
- *           postcode: postcode
+ *           zip: zip
  *
  * @package rainlab\location
  * @author Website Global
@@ -28,7 +28,7 @@ class AusAddressFinder extends FormWidgetBase
     /**
      * {@inheritDoc}
      */
-    public $defaultAlias = 'addressfinder';
+    public $defaultAlias = 'ausaddressfinder';
 
     protected $fieldMap;
     protected $countryRestriction;
@@ -49,7 +49,7 @@ class AusAddressFinder extends FormWidgetBase
     {
         $this->prepareVars();
 
-        return $this->makePartial('addressfinder');
+        return $this->makePartial('ausaddressfinder');
     }
 
     /**
@@ -89,8 +89,8 @@ class AusAddressFinder extends FormWidgetBase
      */
     public function loadAssets()
     {
-        $apiKey = Config::get('websiteglobal.storelocator::googleMapsKey');
-        $this->addJs('//maps.googleapis.com/maps/api/js?libraries=places&key='.$apiKey);
+        $apiKey = Config::get('websiteglobal.ausstorelocator::googleMapsKey');
+        $this->addJs('//maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCQAYsB_fwTY5I28kdvnPW1IiCO_uUYyvs');
         $this->addJs('js/location-autocomplete.js', 'core');
     }
 }

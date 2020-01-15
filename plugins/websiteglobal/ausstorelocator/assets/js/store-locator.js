@@ -449,7 +449,7 @@ const mapStyle = [
       '<p>' +
       m.address_1 + '<br>' +
       m.address_2 + '<br>' +
-      m.city + ', ' + m.state + ', ' + m.zip + '<br>' +
+      m.city + ', ' + m.state + ', ' + m.postcode + '<br>' +
       m.phone + '<br>' +
       (m.website ? ('<a href="' + m.website + '">' + m.website + '</a>') : '') + '<br>' +
       m.hours +
@@ -466,7 +466,7 @@ const mapStyle = [
     var marker = new google.maps.Marker({
       map: map,
       position: latlng,
-      icon: '/plugins/ademin/storelocator/assets/images/icon-marker.png',
+      icon: '/plugins/websiteglobal/ausstorelocator/assets/images/icon-marker.png',
     });
     google.maps.event.addListener(marker, 'click', function() {
       infoWindow.setContent(html);

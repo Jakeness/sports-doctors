@@ -1,14 +1,17 @@
 <?php namespace WebsiteGlobal\AusStoreLocator\Models;
 
-use Model;
+use October\Rain\Database\Model;
+use Illuminate\Support\Facades\DB;
+use October\Rain\Database\Traits\Validation;
 
 /**
  * Model
  */
 class Location extends Model
 {
-    use \October\Rain\Database\Traits\Validation;
     
+    use Validation;
+
     protected $guarded = ['*'];
 
     protected $fillable = [
@@ -37,6 +40,7 @@ class Location extends Model
      * @var array Validation rules
      */
     public $rules = [
+        'name' => 'required',
     ];
 
     public function scopeDistance($query, $lat, $long, $distance)

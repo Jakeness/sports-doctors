@@ -35,7 +35,7 @@
     <input type="text" name="street" value="" id="inputStreet" />
     <input type="text" name="city" value="" id="locationCity" />
     <input type="text" name="state" value="" id="locationState" />
-    <input type="text" name="postcode" value="" id="locationPostcode" />
+    <input type="text" name="zip" value="" id="locationZip" />
     <input type="text" name="country" value="" id="locationCountry" />
  *
  */
