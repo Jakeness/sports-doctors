@@ -34,28 +34,24 @@ class __TwigTemplate_92e1f7a2e3e062877edc8b58b5c7861f67957b44bd1efba65c097ffe2f9
     {
         $macros = $this->macros;
         // line 1
-        echo "<div class=\"location-map\">
-  <iframe id=\"mapFrame\" src=\"/map\" width=\"100%\" height=\"574px\" scrolling=no frameborder=no allowtransparency=\"true\"></iframe>
-  <div class=\"location-detail form-wrap\">
-    <div class=\"location-detail-item red-bg\">
-      <p class=\"small\">Store Locator</p>
-      <h4>Your ZIP code</h4>
-      <input class=\"zip\" id=\"zip\" placeholder=\"03051\" maxlength=\"8\" >
-    </div>
-    <div class=\"location-detail-item grey-bg\">
-      <h4>Locations within</h4>
-      <select name=\"miles\" id=\"radius\" class=\"miles\">
-        <option value=\"25\">25 Miles</option>
-        <option value=\"50\">50 Miles</option>
-        <option value=\"100\">100 Miles</option>
-      </select>
-    </div>
-  </div><!-- /.location-detail -->
-</div><!-- /.location-map -->
+        echo "
+<iframe id=\"mapFrame\" src=\"/map-aus\" width=\"100%\" height=\"574px\" scrolling=no frameborder=no allowtransparency=\"true\"></iframe>
+    <div>
+         <label for=\"raddressInput\">Search location:</label>
+         <input type=\"text\" id=\"addressInput\" size=\"15\"/>
+        <label for=\"radiusSelect\">Radius:</label>
+        <select id=\"radius\" label=\"Radius\">
+          <option value=\"50\" selected>50 kms</option>
+          <option value=\"30\">30 kms</option>
+          <option value=\"20\">20 kms</option>
+          <option value=\"10\">10 kms</option>
+        </select>
 
-<div class=\"detail-wrap detail-wrap--updated\">
-  <div id=\"locations\" class=\"three-cols\"></div>
-</div>";
+        <input type=\"button\" id=\"searchButton\" value=\"Search\"/>
+    </div>
+    <div class=\"detail-wrap detail-wrap--updated\">
+      <div id=\"locations\" class=\"three-cols\"></div>
+    </div>";
     }
 
     public function getTemplateName()
@@ -70,27 +66,23 @@ class __TwigTemplate_92e1f7a2e3e062877edc8b58b5c7861f67957b44bd1efba65c097ffe2f9
 
     public function getSourceContext()
     {
-        return new Source("<div class=\"location-map\">
-  <iframe id=\"mapFrame\" src=\"/map\" width=\"100%\" height=\"574px\" scrolling=no frameborder=no allowtransparency=\"true\"></iframe>
-  <div class=\"location-detail form-wrap\">
-    <div class=\"location-detail-item red-bg\">
-      <p class=\"small\">Store Locator</p>
-      <h4>Your ZIP code</h4>
-      <input class=\"zip\" id=\"zip\" placeholder=\"03051\" maxlength=\"8\" >
-    </div>
-    <div class=\"location-detail-item grey-bg\">
-      <h4>Locations within</h4>
-      <select name=\"miles\" id=\"radius\" class=\"miles\">
-        <option value=\"25\">25 Miles</option>
-        <option value=\"50\">50 Miles</option>
-        <option value=\"100\">100 Miles</option>
-      </select>
-    </div>
-  </div><!-- /.location-detail -->
-</div><!-- /.location-map -->
+        return new Source("
+<iframe id=\"mapFrame\" src=\"/map-aus\" width=\"100%\" height=\"574px\" scrolling=no frameborder=no allowtransparency=\"true\"></iframe>
+    <div>
+         <label for=\"raddressInput\">Search location:</label>
+         <input type=\"text\" id=\"addressInput\" size=\"15\"/>
+        <label for=\"radiusSelect\">Radius:</label>
+        <select id=\"radius\" label=\"Radius\">
+          <option value=\"50\" selected>50 kms</option>
+          <option value=\"30\">30 kms</option>
+          <option value=\"20\">20 kms</option>
+          <option value=\"10\">10 kms</option>
+        </select>
 
-<div class=\"detail-wrap detail-wrap--updated\">
-  <div id=\"locations\" class=\"three-cols\"></div>
-</div>", "/Users/jakemcleod/Documents/Website Global/GIT/sports-doctors/plugins/websiteglobal/ausstorelocator/components/ausstorelocator/default.htm", "");
+        <input type=\"button\" id=\"searchButton\" value=\"Search\"/>
+    </div>
+    <div class=\"detail-wrap detail-wrap--updated\">
+      <div id=\"locations\" class=\"three-cols\"></div>
+    </div>", "/Users/jakemcleod/Documents/Website Global/GIT/sports-doctors/plugins/websiteglobal/ausstorelocator/components/ausstorelocator/default.htm", "");
     }
 }

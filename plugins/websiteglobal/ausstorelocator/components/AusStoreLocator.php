@@ -19,6 +19,6 @@ class AusStoreLocator extends ComponentBase
 
     public function onRun()
     {
-        $this->addCss('/plugins/websiteglobal/storelocator/assets/css/store-locator.css');
+        $this->addCss('/plugins/websiteglobal/ausstorelocator/assets/css/store-locator.css');
     }
 }

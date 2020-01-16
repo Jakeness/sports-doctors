@@ -5,7 +5,7 @@ fields:
   address:
     label: Address
     type: addressfinder
-    countryRestriction: 'us,gb'
+    countryRestriction: 'au'
     fieldMap:
       latitude: lat
       longitude: lng

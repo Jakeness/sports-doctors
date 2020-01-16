@@ -1,17 +1,29 @@
-<html>
-<head>
-  <title>Store Locator</title>
-  <style>
-    .map {height: 100%;}
-    html, body {height: 100%; margin: 0; padding: 0;}
-  </style>
+<!DOCTYPE html >
   <head>
-<body>
-<div id="map" style="width: 100%; height: 90%"></div>
-<script src="/plugins/websiteglobal/storelocator/assets/js/store-locator.js"></script>
-<script async defer
-        src="//maps.googleapis.com/maps/api/js?key=%api_key%&callback=initMap">
-</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <title>Creating a Store Locator on Google Maps</title>
+  <style>
+    /* Always set the map height explicitly to define the size of the div
+     * element that contains the map. */
+    #map {
+      height: 100%;
+    }
+    /* Optional: Makes the sample page fill the window. */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+ </style>
+  </head>
+  <body style="margin:0px; padding:0px;" onload="initMap()">
 
-</body>
+    <div id="map" style="width: 100%; height: 90%"></div>
+    
+  <script src="/plugins/websiteglobal/ausstorelocator/assets/js/store-locator.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=%api_key%&callback=initMap">
+    </script>
+  </body>
 </html>

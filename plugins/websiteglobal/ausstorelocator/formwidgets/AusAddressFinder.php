@@ -89,7 +89,7 @@ class AusAddressFinder extends FormWidgetBase
      */
     public function loadAssets()
     {
-        $apiKey = Config::get('websiteglobal.storelocator::googleMapsKey');
+        $apiKey = Config::get('websiteglobal.ausstorelocator::googleMapsKey');
         $this->addJs('//maps.googleapis.com/maps/api/js?libraries=places&key='.$apiKey);
         $this->addJs('js/location-autocomplete.js', 'core');
     }

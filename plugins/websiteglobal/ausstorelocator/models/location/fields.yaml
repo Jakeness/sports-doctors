@@ -5,16 +5,16 @@ fields:
         type: text
     address:
         label: Address
-        type: text
-        # countryRestriction: 'au'
-        # fieldMap:
-        #     latitude: lat
-        #     longitude: lng
-        #     street: address_1
-        #     city: city
-        #     postcode: postcode
-        #     country: country
-        #     state: state    
+        type: ausaddressfinder
+        countryRestriction: 'au'
+        fieldMap:
+            latitude: lat
+            longitude: lng
+            street: address_1
+            city: city
+            postcode: postcode
+            country: country
+            state: state    
     address_1:
         label: 'Street Address'
         span: left

@@ -1,6 +1,6 @@
 <?php
 
-namespace Websiteglobal\AusStoreLocator\Classes;
+namespace WebsiteGlobal\AusStoreLocator\Classes;
 
 use Illuminate\Support\Facades\Config;
 
@@ -14,7 +14,7 @@ class GeoCoder
 
     public function __construct($addressParts)
     {
-        $this->apiKey = Config::get('websiteglobal.storelocator::googleMapsKey');
+        $this->apiKey = Config::get('websiteglobal.ausstorelocator::googleMapsKey');
         $this->buildAddress($addressParts);
         $this->geocode();
     }

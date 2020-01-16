@@ -9,3 +9,5 @@ navigation:
         label: Locations
         url: websiteglobal/ausstorelocator/locations
         icon: icon-map-marker
+        permissions:
+            - ['websiteglobal.ausstorelocator.*']

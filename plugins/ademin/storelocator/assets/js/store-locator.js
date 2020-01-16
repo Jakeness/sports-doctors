@@ -344,8 +344,11 @@ var radiusEl = parent.document.getElementById('radius');
 var listEl = parent.document.getElementById('locations');
 
 function initMap() {
+  radiusEl.value = 10000;
+  zipEl.value = 4000; //(or any other default zip )
+  searchLocations();
   zipEl.focus();
-  var wakefieldOffice = {lat: 42.520226, lng: -71.047453};
+  var wakefieldOffice = {lat: -28.018045, lng: 133.586334};
   // Try HTML5 geolocation.
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
@@ -364,7 +367,7 @@ function initMap() {
 
   map = new google.maps.Map(mapEl, {
     center: wakefieldOffice,
-    zoom: 11,
+    zoom: 4,
     styles: mapStyle
   });
   infoWindow = new google.maps.InfoWindow();

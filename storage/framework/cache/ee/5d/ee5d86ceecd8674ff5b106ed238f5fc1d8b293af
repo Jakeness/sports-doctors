@@ -1,0 +1,87 @@
+1579138872a:1:{s:16:"footerScript.htm";a:6:{s:8:"fileName";s:16:"footerScript.htm";s:7:"content";s:1412:"[viewBag]
+==
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="{{ 'assets/js/bootstrap.min.js'|theme }}"></script>
+
+<!-- MASTERSLIDER -->
+<script>
+
+    
+    
+    
+    var slider = new MasterSlider();
+        
+            if ($(window).width() < 767) {
+                              
+              slider.setup('masterslider', {
+                layout: "fullwidth",
+                
+                height: 450,   
+                autoplay: true,
+        		loop: true,
+              });
+            } else {
+                
+                slider.control('arrows' , {autohide:false});
+                
+              slider.setup('masterslider', {
+                width:1200,    // slider standard width
+        		height:530,   // slider standard height
+        		space:5,
+                autoplay: true,
+        		loop: true,
+        		layout: "fullwidth",
+              });
+            }   
+    
+    jQuery('.date').each(function() {    
+				var data =jQuery(this).text();
+				var arr = data.split('-');
+				jQuery(this).html('<div class="day">'+arr[0] + '</div> <div class="month">'+arr[1] + '</div> <div  class="year">'+arr[2] + '</div>');
+        });
+    
+</script>";s:5:"mtime";i:1578970646;s:6:"markup";s:1399:"<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="{{ 'assets/js/bootstrap.min.js'|theme }}"></script>
+
+<!-- MASTERSLIDER -->
+<script>
+
+    
+    
+    
+    var slider = new MasterSlider();
+        
+            if ($(window).width() < 767) {
+                              
+              slider.setup('masterslider', {
+                layout: "fullwidth",
+                
+                height: 450,   
+                autoplay: true,
+        		loop: true,
+              });
+            } else {
+                
+                slider.control('arrows' , {autohide:false});
+                
+              slider.setup('masterslider', {
+                width:1200,    // slider standard width
+        		height:530,   // slider standard height
+        		space:5,
+                autoplay: true,
+        		loop: true,
+        		layout: "fullwidth",
+              });
+            }   
+    
+    jQuery('.date').each(function() {    
+				var data =jQuery(this).text();
+				var arr = data.split('-');
+				jQuery(this).html('<div class="day">'+arr[0] + '</div> <div class="month">'+arr[1] + '</div> <div  class="year">'+arr[2] + '</div>');
+        });
+    
+</script>";s:4:"code";N;s:7:"viewBag";a:0:{}}}
