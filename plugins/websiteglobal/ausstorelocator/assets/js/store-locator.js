@@ -150,7 +150,7 @@
     var marker = new google.maps.Marker({
       map: map,
       position: latlng,
-      icon: '/plugins/ademin/storelocator/assets/images/icon-marker.png',
+      icon: '/plugins/websiteglobal/ausstorelocator/assets/images/icon-marker.png',
     });
     google.maps.event.addListener(marker, 'click', function() {
       infoWindow.setContent(html);
