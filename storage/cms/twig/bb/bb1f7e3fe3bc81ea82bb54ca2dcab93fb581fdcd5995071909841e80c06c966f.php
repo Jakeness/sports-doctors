@@ -77,6 +77,9 @@ class __TwigTemplate_4aa7a1c753e6f2ed23e0a508f1769404b7dee47b75fa98174e68f59025c
         echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("staticPage"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
         // line 26
+        echo "                    ";
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
+        // line 27
         echo "                </div>
             </div>
 
@@ -88,18 +91,18 @@ class __TwigTemplate_4aa7a1c753e6f2ed23e0a508f1769404b7dee47b75fa98174e68f59025c
 
         
         ";
-        // line 36
+        // line 37
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("footer"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
         echo "        
 
         ";
-        // line 38
+        // line 39
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("footerScript"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 39
+        // line 40
         echo "
     </body>
 
@@ -118,7 +121,7 @@ class __TwigTemplate_4aa7a1c753e6f2ed23e0a508f1769404b7dee47b75fa98174e68f59025c
 
     public function getDebugInfo()
     {
-        return array (  103 => 39,  99 => 38,  92 => 36,  80 => 26,  76 => 25,  65 => 17,  60 => 14,  56 => 13,  47 => 6,  43 => 5,  37 => 1,);
+        return array (  106 => 40,  102 => 39,  95 => 37,  83 => 27,  80 => 26,  76 => 25,  65 => 17,  60 => 14,  56 => 13,  47 => 6,  43 => 5,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -148,6 +151,7 @@ class __TwigTemplate_4aa7a1c753e6f2ed23e0a508f1769404b7dee47b75fa98174e68f59025c
             <div class=\"container\">
                 <div class=\"col-xs-12\">
                     {% component 'staticPage' %}
+                    {% page %}
                 </div>
             </div>
 

@@ -1,7 +1,8 @@
-1579869554a:1:{s:12:"map-test.htm";a:9:{s:8:"fileName";s:12:"map-test.htm";s:7:"content";s:106:"title = "Map Test"
+1579871335a:1:{s:12:"map-test.htm";a:10:{s:8:"fileName";s:12:"map-test.htm";s:7:"content";s:123:"title = "Map Test"
 url = "/map-test"
+layout = "Inner"
 is_hidden = 0
 
 [ausStoreLocator]
 ==
-{% component 'ausStoreLocator' %}";s:5:"mtime";i:1578984599;s:6:"markup";s:33:"{% component 'ausStoreLocator' %}";s:4:"code";N;s:5:"title";s:8:"Map Test";s:3:"url";s:9:"/map-test";s:9:"is_hidden";s:1:"0";s:15:"ausStoreLocator";a:0:{}}}
+{% component 'ausStoreLocator' %}";s:5:"mtime";i:1579870733;s:6:"markup";s:33:"{% component 'ausStoreLocator' %}";s:4:"code";N;s:5:"title";s:8:"Map Test";s:3:"url";s:9:"/map-test";s:6:"layout";s:5:"Inner";s:9:"is_hidden";s:1:"0";s:15:"ausStoreLocator";a:0:{}}}

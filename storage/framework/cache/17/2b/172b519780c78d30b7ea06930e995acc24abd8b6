@@ -1,4 +1,4 @@
-1579154354a:1:{s:9:"Inner.htm";a:6:{s:8:"fileName";s:9:"Inner.htm";s:7:"content";s:775:"[staticPage]
+1579871371a:1:{s:9:"Inner.htm";a:6:{s:8:"fileName";s:9:"Inner.htm";s:7:"content";s:807:"[staticPage]
 useContent = 1
 default = 0
 ==
@@ -27,6 +27,7 @@ default = 0
             <div class="container">
                 <div class="col-xs-12">
                     {% component 'staticPage' %}
+                    {% page %}
                 </div>
             </div>
 
@@ -43,7 +44,7 @@ default = 0
 
     </body>
 
-</html>";s:5:"mtime";i:1578971168;s:6:"markup";s:732:"<html>
+</html>";s:5:"mtime";i:1579870770;s:6:"markup";s:764:"<html>
 
    <head>
 
@@ -68,6 +69,7 @@ default = 0
             <div class="container">
                 <div class="col-xs-12">
                     {% component 'staticPage' %}
+                    {% page %}
                 </div>
             </div>
 
