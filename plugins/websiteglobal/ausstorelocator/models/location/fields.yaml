@@ -1,12 +1,18 @@
 fields:
+    disable:
+        label: 'Disable Location'
+        span: auto
+        type: checkbox
+        comment: 'Hide this location from the public'
     name:
         label: 'Location Name'
         span: full
         type: text
+        commentAbove: 'This is for backend reference only'
     address:
         label: Address
         type: ausaddressfinder
-        countryRestriction: 'au'
+        countryRestriction: au
         fieldMap:
             latitude: lat
             longitude: lng
@@ -14,7 +20,7 @@ fields:
             city: city
             postcode: postcode
             country: country
-            state: state    
+            state: state
     address_1:
         label: 'Street Address'
         span: left
@@ -51,21 +57,36 @@ fields:
         label: 'Location Detials'
         span: full
         type: section
+    doctor_name:
+        label: 'Doctor''s Name'
+        span: auto
+        required: 1
+        type: text
+        comment: 'ie: Dr Thomas Gan'
+    practice_name:
+        label: 'Practice Name'
+        span: auto
+        required: 0
+        type: text
     phone:
         label: 'Phone Number'
-        span: full
+        span: auto
         type: text
     fax:
         label: 'Fax Number'
-        span: full
+        span: auto
+        type: text
+    email:
+        label: Email
+        span: auto
         type: text
     website:
         label: Website
-        span: full
+        span: auto
         type: text
         comment: 'ie: https://www.website.com.au'
     description:
-        label: 'Extra Information'
-        span: full
+        label: Description
         size: ''
+        span: full
         type: richeditor

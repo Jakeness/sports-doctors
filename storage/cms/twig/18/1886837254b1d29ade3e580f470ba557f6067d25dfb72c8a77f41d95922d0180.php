@@ -12,8 +12,8 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* /Users/jakemcleod/Documents/Website Global/GIT/sports-doctors/themes/sports-doctors/pages/ademin.htm */
-class __TwigTemplate_2e81f1d2bb9685be83f0a87ca663c4fabe99f78e9236ee47d4a78f7bcc89d5a2 extends \Twig\Template
+/* /Users/jakemcleod/Documents/Website Global/GIT/sports-doctors/themes/sports-doctors/content/static-pages/map-test.htm */
+class __TwigTemplate_a3b478d6ddab90a207f0ce3a80eb72ac0cc08c83b1ef338374d59ded1d90eb8a extends \Twig\Template
 {
     private $source;
     private $macros = [];
@@ -33,29 +33,20 @@ class __TwigTemplate_2e81f1d2bb9685be83f0a87ca663c4fabe99f78e9236ee47d4a78f7bcc8
     protected function doDisplay(array $context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 1
-        $context['__cms_component_params'] = [];
-        echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("storeLocator"        , $context['__cms_component_params']        );
-        unset($context['__cms_component_params']);
     }
 
     public function getTemplateName()
     {
-        return "/Users/jakemcleod/Documents/Website Global/GIT/sports-doctors/themes/sports-doctors/pages/ademin.htm";
-    }
-
-    public function isTraitable()
-    {
-        return false;
+        return "/Users/jakemcleod/Documents/Website Global/GIT/sports-doctors/themes/sports-doctors/content/static-pages/map-test.htm";
     }
 
     public function getDebugInfo()
     {
-        return array (  37 => 1,);
+        return array ();
     }
 
     public function getSourceContext()
     {
-        return new Source("{% component 'storeLocator' %}", "/Users/jakemcleod/Documents/Website Global/GIT/sports-doctors/themes/sports-doctors/pages/ademin.htm", "");
+        return new Source("", "/Users/jakemcleod/Documents/Website Global/GIT/sports-doctors/themes/sports-doctors/content/static-pages/map-test.htm", "");
     }
 }

@@ -3,3 +3,12 @@
 1.0.2:
     - 'Created table websiteglobal_ausstorelocator_locations'
     - builder_table_create_websiteglobal_ausstorelocator_locations.php
+1.0.3:
+    - 'Updated table websiteglobal_ausstorelocator_locations'
+    - builder_table_update_websiteglobal_ausstorelocator_locations.php
+1.0.4:
+    - 'Updated table websiteglobal_ausstorelocator_locations'
+    - builder_table_update_websiteglobal_ausstorelocator_locations_2.php
+1.0.5:
+    - 'Updated table websiteglobal_ausstorelocator_locations'
+    - builder_table_update_websiteglobal_ausstorelocator_locations_3.php

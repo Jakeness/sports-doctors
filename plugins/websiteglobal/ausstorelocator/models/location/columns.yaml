@@ -9,3 +9,13 @@ columns:
         type: text
         searchable: true
         sortable: true
+    doctor_name:
+        label: 'Doctors Name'
+        type: text
+        searchable: true
+        sortable: true
+    disable:
+        label: Disabled
+        type: switch
+        searchable: true
+        sortable: true

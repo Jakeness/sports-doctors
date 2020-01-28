@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'debug' => true,
+    'debug' => env('APP_DEBUG', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -41,7 +41,7 @@ return [
     |
     */
 
-    'url' => 'http://sports-doctors.test/',
+    'url' => env('APP_URL', 'http://sports-doctors.test/'),
 
     /*
     |--------------------------------------------------------------------------
@@ -101,7 +101,7 @@ return [
     |
     */
 
-    'key' => 'FlewrjDqYIm360MLsBFl8tSJ3rs880To',
+    'key' => env('APP_KEY', ''),
 
     'cipher' => 'AES-256-CBC',
 

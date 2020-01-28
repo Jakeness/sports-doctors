@@ -41,6 +41,7 @@ class Location extends Model
      */
     public $rules = [
         'name' => 'required',
+        'doctor_name' => 'required'
     ];
 
     public function scopeDistance($query, $lat, $long, $distance)
