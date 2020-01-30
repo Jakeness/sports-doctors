@@ -12,7 +12,7 @@ fields:
     address:
         label: Address
         type: ausaddressfinder
-        countryRestriction: au
+        countryRestriction: au, nz
         fieldMap:
             latitude: lat
             longitude: lng
