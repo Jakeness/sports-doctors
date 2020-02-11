@@ -543,13 +543,13 @@ ul.directory li .content {
 }
 
 
-ul.directory li > ul {
+ul.directory li ul {
     list-style-type: none; 
     padding: 0; 
     margin: 0;}
 
 
-ul.directory li > ul li.icon {
+ul.directory li ul li.icon {
 	background-size: contain;
     background-repeat: no-repeat;
     padding-left: 37px;
@@ -557,10 +557,10 @@ ul.directory li > ul li.icon {
     margin-bottom: 5px;
 }
 
-ul.directory li > ul li.phone {background-image: url("/images/template/icon_phone.png");}
-ul.directory li > ul li.fax {background-image: url("/images/template/icon_fax.png");}
-ul.directory li > ul li.website {background-image: url("/images/template/icon_website.png");}
-ul.directory li > ul li.email {background-image: url("/images/template/icon_email.png");}
+ul.directory li ul li.phone {background-image: url("/themes/sports-doctors/assets/images/template/icon_phone.png");}
+ul.directory li ul li.fax {background-image: url("/themes/sports-doctors/assets/images/template/icon_fax.png");}
+ul.directory li ul li.website {background-image: url("/themes/sports-doctors/assets/images/template/icon_website.png");}
+ul.directory li ul li.email {background-image: url("/themes/sports-doctors/assets/images/template/icon_email.png");}
 
 ul.directory li > div.linkButtons {
 	position: absolute;
@@ -614,10 +614,10 @@ section.directoryForm .webform select {
     font-size: 13px;
 }
 
-section.directoryForm .webform input[type="submit"] {
+section.directoryForm .webform input[type="submit"], section.directoryForm .webform input[type="button"] {
 	font-family: font-family: 'Ubuntu', sans-serif;
 	background-color: #18964C;
-	padding: 10px 15px;
+	padding: 15px 15px;
     outline: none;
     border: 0;
     text-transform: uppercase;
@@ -630,7 +630,7 @@ section.directoryForm .webform input[type="submit"] {
 	transition: background-color 0.3s ease, border-radius 0.3s ease;
 }
 
-section.directoryForm .webform input[type="submit"]:hover {
+section.directoryForm .webform input[type="submit"]:hover, section.directoryForm .webform input[type="button"]:hover {
 	background-color: rgba(11,61,145,1);
     border-radius: 50px;
 }

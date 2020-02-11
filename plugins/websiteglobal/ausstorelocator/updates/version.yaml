@@ -12,3 +12,6 @@
 1.0.5:
     - 'Updated table websiteglobal_ausstorelocator_locations'
     - builder_table_update_websiteglobal_ausstorelocator_locations_3.php
+1.0.6:
+    - 'Updated table websiteglobal_ausstorelocator_locations'
+    - builder_table_update_websiteglobal_ausstorelocator_locations_4.php

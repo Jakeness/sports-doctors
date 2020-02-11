@@ -1,15 +1,14 @@
-1580268311a:1:{s:16:"footerScript.htm";a:6:{s:8:"fileName";s:16:"footerScript.htm";s:7:"content";s:1412:"[viewBag]
+1581399090a:1:{s:16:"footerScript.htm";a:6:{s:8:"fileName";s:16:"footerScript.htm";s:7:"content";s:1414:"[viewBag]
 ==
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="{{ 'assets/js/bootstrap.min.js'|theme }}"></script>
 
 <!-- MASTERSLIDER -->
 <script>
-
-    
-    
     
     var slider = new MasterSlider();
         
@@ -42,16 +41,15 @@
 				jQuery(this).html('<div class="day">'+arr[0] + '</div> <div class="month">'+arr[1] + '</div> <div  class="year">'+arr[2] + '</div>');
         });
     
-</script>";s:5:"mtime";i:1578970646;s:6:"markup";s:1399:"<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</script>";s:5:"mtime";i:1581044923;s:6:"markup";s:1401:"<script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="{{ 'assets/js/bootstrap.min.js'|theme }}"></script>
 
 <!-- MASTERSLIDER -->
 <script>
-
-    
-    
     
     var slider = new MasterSlider();
         

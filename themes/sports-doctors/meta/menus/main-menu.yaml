@@ -12,13 +12,4 @@ items:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
-    -
-        title: map-test
-        type: cms-page
-        code: ''
-        reference: map-test
-        viewBag:
-            isHidden: '0'
-            cssClass: ''
-            isExternal: '0'
 name: 'Main Menu'

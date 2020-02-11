@@ -1,4 +1,4 @@
-1580268310a:1:{s:14:"main-menu.yaml";a:7:{s:8:"fileName";s:14:"main-menu.yaml";s:7:"content";s:495:"items:
+1581399090a:1:{s:14:"main-menu.yaml";a:7:{s:8:"fileName";s:14:"main-menu.yaml";s:7:"content";s:301:"items:
     -
         title: 'All Pages'
         nesting: ''
@@ -12,14 +12,5 @@
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
-    -
-        title: map-test
-        type: cms-page
-        code: ''
-        reference: map-test
-        viewBag:
-            isHidden: '0'
-            cssClass: ''
-            isExternal: '0'
 name: 'Main Menu'
-";s:5:"mtime";i:1580085488;s:6:"markup";N;s:4:"code";N;s:4:"name";N;s:5:"items";a:0:{}}}
+";s:5:"mtime";i:1581044346;s:6:"markup";N;s:4:"code";N;s:4:"name";N;s:5:"items";a:0:{}}}

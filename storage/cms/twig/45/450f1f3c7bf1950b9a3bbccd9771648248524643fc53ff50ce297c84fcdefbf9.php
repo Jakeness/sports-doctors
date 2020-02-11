@@ -34,24 +34,49 @@ class __TwigTemplate_92e1f7a2e3e062877edc8b58b5c7861f67957b44bd1efba65c097ffe2f9
     {
         $macros = $this->macros;
         // line 1
-        echo "
-<iframe id=\"mapFrame\" src=\"/map-aus\" width=\"100%\" height=\"574px\" scrolling=no frameborder=no allowtransparency=\"true\"></iframe>
-    <div>
-         <label for=\"raddressInput\">Search location:</label>
-         <input type=\"text\" id=\"addressInput\" size=\"15\"/>
-        <label for=\"radiusSelect\">Radius:</label>
-        <select id=\"radius\" label=\"Radius\">
-          <option value=\"50\" selected>50 kms</option>
-          <option value=\"30\">30 kms</option>
-          <option value=\"20\">20 kms</option>
-          <option value=\"10\">10 kms</option>
-        </select>
+        echo "<div class=\"container-fluid\">
+    <div class=\"col-xs-12\">
+        <section class=\"directoryForm\">
+            <form id=\"directory\" onsubmit=\"return;\">
+                <div class=\"webform row\">
+                    <div class=\"col-xs-12 col-sm-offset-1 col-sm-11 col-md-offset-2 col-md-10 col-lg-offset-2 col-lg-10\">
+                        <h4 style=\"margin-top: 0;\">Find a Sports Doctor</h4>
+                    </div>
 
-        <input type=\"button\" id=\"searchButton\" value=\"Search\"/>
+                    <div class=\"col-xs-12 col-sm-offset-1 col-sm-4 col-md-offset-2 col-md-4 col-lg-offset-2 col-lg-4\">
+                        <input type=\"text\" maxlength=\"255\" placeholder=\"Enter your Postcode\" name=\"Postcode\"
+                               id=\"Postcode\" class=\"cat_textbox\"><br>
+                    </div>
+                    <div class=\"col-xs-12 col-sm-3 col-md-2 col-lg-2\">
+                        <input type=\"hidden\" id=\"Country\" name=\"Country\" value=\"AU\">
+                        <select name=\"Distance\" id=\"Distance\" class=\"cat_dropdown\">
+                            <option value=\"5\">within 5 km</option>
+                            <option value=\"10\">within 10 km</option>
+                            <option value=\"20\" selected=\"selected\">within 20 km</option>
+                            <option value=\"50\">within 50 km</option>
+                            <option value=\"100\">within 100 km</option>
+                        </select>
+                    </div>
+                    <div class=\"col-xs-12 col-sm-2 col-md-2 col-lg-2\">
+                        <input class=\"cat_button\" id=\"searchMap\" type=\"button\" value=\"Search\">
+                    </div>
+                </div>
+            </form>
+        </section>
     </div>
-    <div class=\"detail-wrap detail-wrap--updated\">
-      <div id=\"locations\" class=\"three-cols\"></div>
-    </div>";
+</div>
+<div class=\"row direcWebapp\">
+    <div class=\"col-sm-12 col-md-5 col-lg-4 noPad left\">
+        <iframe id=\"mapFrame\" src=\"map-aus\" width=\"100%\" height=\"574px\" scrolling=no frameborder=no
+                allowtransparency=\"true\"></iframe>
+    </div>
+    <div class=\"col-sm-12 col-md-7 col-lg-8 noPad right\">
+        <ul class=\"directory\">
+            <div class=\"webappsearchresults\" id=\"locations\">
+            </div>
+        </ul>
+    </div>
+</div>";
     }
 
     public function getTemplateName()
@@ -66,23 +91,48 @@ class __TwigTemplate_92e1f7a2e3e062877edc8b58b5c7861f67957b44bd1efba65c097ffe2f9
 
     public function getSourceContext()
     {
-        return new Source("
-<iframe id=\"mapFrame\" src=\"/map-aus\" width=\"100%\" height=\"574px\" scrolling=no frameborder=no allowtransparency=\"true\"></iframe>
-    <div>
-         <label for=\"raddressInput\">Search location:</label>
-         <input type=\"text\" id=\"addressInput\" size=\"15\"/>
-        <label for=\"radiusSelect\">Radius:</label>
-        <select id=\"radius\" label=\"Radius\">
-          <option value=\"50\" selected>50 kms</option>
-          <option value=\"30\">30 kms</option>
-          <option value=\"20\">20 kms</option>
-          <option value=\"10\">10 kms</option>
-        </select>
+        return new Source("<div class=\"container-fluid\">
+    <div class=\"col-xs-12\">
+        <section class=\"directoryForm\">
+            <form id=\"directory\" onsubmit=\"return;\">
+                <div class=\"webform row\">
+                    <div class=\"col-xs-12 col-sm-offset-1 col-sm-11 col-md-offset-2 col-md-10 col-lg-offset-2 col-lg-10\">
+                        <h4 style=\"margin-top: 0;\">Find a Sports Doctor</h4>
+                    </div>
 
-        <input type=\"button\" id=\"searchButton\" value=\"Search\"/>
+                    <div class=\"col-xs-12 col-sm-offset-1 col-sm-4 col-md-offset-2 col-md-4 col-lg-offset-2 col-lg-4\">
+                        <input type=\"text\" maxlength=\"255\" placeholder=\"Enter your Postcode\" name=\"Postcode\"
+                               id=\"Postcode\" class=\"cat_textbox\"><br>
+                    </div>
+                    <div class=\"col-xs-12 col-sm-3 col-md-2 col-lg-2\">
+                        <input type=\"hidden\" id=\"Country\" name=\"Country\" value=\"AU\">
+                        <select name=\"Distance\" id=\"Distance\" class=\"cat_dropdown\">
+                            <option value=\"5\">within 5 km</option>
+                            <option value=\"10\">within 10 km</option>
+                            <option value=\"20\" selected=\"selected\">within 20 km</option>
+                            <option value=\"50\">within 50 km</option>
+                            <option value=\"100\">within 100 km</option>
+                        </select>
+                    </div>
+                    <div class=\"col-xs-12 col-sm-2 col-md-2 col-lg-2\">
+                        <input class=\"cat_button\" id=\"searchMap\" type=\"button\" value=\"Search\">
+                    </div>
+                </div>
+            </form>
+        </section>
     </div>
-    <div class=\"detail-wrap detail-wrap--updated\">
-      <div id=\"locations\" class=\"three-cols\"></div>
-    </div>", "/Users/jakemcleod/Documents/Website Global/GIT/sports-doctors/plugins/websiteglobal/ausstorelocator/components/ausstorelocator/default.htm", "");
+</div>
+<div class=\"row direcWebapp\">
+    <div class=\"col-sm-12 col-md-5 col-lg-4 noPad left\">
+        <iframe id=\"mapFrame\" src=\"map-aus\" width=\"100%\" height=\"574px\" scrolling=no frameborder=no
+                allowtransparency=\"true\"></iframe>
+    </div>
+    <div class=\"col-sm-12 col-md-7 col-lg-8 noPad right\">
+        <ul class=\"directory\">
+            <div class=\"webappsearchresults\" id=\"locations\">
+            </div>
+        </ul>
+    </div>
+</div>", "/Users/jakemcleod/Documents/Website Global/GIT/sports-doctors/plugins/websiteglobal/ausstorelocator/components/ausstorelocator/default.htm", "");
     }
 }

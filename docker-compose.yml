@@ -1,0 +1,32 @@
+version: '3'
+services:
+  db:
+    container_name: october_db
+    image: mysql:5.7
+    environment:
+      - MYSQL_DATABASE=${DB_DATABASE}
+      - MYSQL_USER=${DB_USERNAME}
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+      - MYSQL_ROOT_PASSWORD=${DB_PASSWORD}
+    ports:
+    - "3306:3306"
+
+  php:
+    container_name: october_php
+    build:
+      context: ./php-fpm
+    volumes:
+      - ./:/var/www/html
+    links:
+      - db
+
+  web:
+    container_name: october_web
+    build:
+      context: ./apache
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/usr/local/apache2/htdocs/
+    links:
+      - php

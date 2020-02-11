@@ -34,19 +34,18 @@ class __TwigTemplate_e9bafd5391b169939e06eee126dba32e52560df4a7a3435ab2c7ac0caf9
     {
         $macros = $this->macros;
         // line 1
-        echo "<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js\"></script>
+        echo "<script
+  src=\"https://code.jquery.com/jquery-3.4.1.slim.min.js\"
+  integrity=\"sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=\"
+  crossorigin=\"anonymous\"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src=\"";
-        // line 4
+        // line 6
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/bootstrap.min.js");
         echo "\"></script>
 
 <!-- MASTERSLIDER -->
 <script>
-
-    
-    
     
     var slider = new MasterSlider();
         
@@ -94,21 +93,20 @@ class __TwigTemplate_e9bafd5391b169939e06eee126dba32e52560df4a7a3435ab2c7ac0caf9
 
     public function getDebugInfo()
     {
-        return array (  42 => 4,  37 => 1,);
+        return array (  44 => 6,  37 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js\"></script>
+        return new Source("<script
+  src=\"https://code.jquery.com/jquery-3.4.1.slim.min.js\"
+  integrity=\"sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=\"
+  crossorigin=\"anonymous\"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src=\"{{ 'assets/js/bootstrap.min.js'|theme }}\"></script>
 
 <!-- MASTERSLIDER -->
 <script>
-
-    
-    
     
     var slider = new MasterSlider();
         

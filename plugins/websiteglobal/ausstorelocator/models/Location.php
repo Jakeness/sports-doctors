@@ -1,7 +1,7 @@
 <?php namespace WebsiteGlobal\AusStoreLocator\Models;
 
-use October\Rain\Database\Model;
 use Illuminate\Support\Facades\DB;
+use October\Rain\Database\Model;
 use October\Rain\Database\Traits\Validation;
 
 /**
@@ -9,7 +9,6 @@ use October\Rain\Database\Traits\Validation;
  */
 class Location extends Model
 {
-    
     use Validation;
 
     protected $guarded = ['*'];
@@ -46,32 +45,23 @@ class Location extends Model
 
     public function scopeDistance($query, $lat, $long, $distance)
     {
-        return $query->having('distance', '<', $distance)
-            ->select(DB::raw(
-                    "*, (3959 * ACOS(COS(RADIANS($lat))
+        return $query->having('distance', '<', $distance)->select(DB::raw("*, (3959 * ACOS(COS(RADIANS($lat))
                     * COS(RADIANS(lat))
                     * COS(RADIANS($long) - RADIANS(lng))
                     + SIN(RADIANS($lat))
-                    * SIN(RADIANS(lat)))) AS distance"
-                )
-            )->orderBy('distance', 'asc')
-            ->get();
+                    * SIN(RADIANS(lat)))) AS distance"))->where('disable', '=', 0)->orderBy('distance', 'asc')->get();
     }
 
     public function scopeWithinBounds($query, $a, $b, $c, $d)
     {
         return $query->where(function ($q) use ($a, $c) {
-                $q->whereRaw("$a < $c")->whereBetween('lat', [$a, $c])
-                    ->orWhere(function ($q2) use ($a, $c) {
-                        $q2->whereRaw("$a > $c")->whereBetween('lat', [$c, $a]);
-                    });
-        })
-            ->where(function ($q) use ($b, $d) {
-                $q->whereRaw("$b < $d")->whereBetween('lng', [$b, $d])
-                    ->orWhere(function ($q2) use ($b, $d) {
-                        $q2->whereRaw("$b > $d")->whereBetween('lat', [$d, $b]);
-                    });
-            })
-            ->get();
+            $q->whereRaw("$a < $c")->whereBetween('lat', [$a, $c])->orWhere(function ($q2) use ($a, $c) {
+                    $q2->whereRaw("$a > $c")->whereBetween('lat', [$c, $a]);
+                });
+        })->where(function ($q) use ($b, $d) {
+            $q->whereRaw("$b < $d")->whereBetween('lng', [$b, $d])->orWhere(function ($q2) use ($b, $d) {
+                    $q2->whereRaw("$b > $d")->whereBetween('lat', [$d, $b]);
+                });
+        })->where('disable', '=', 0)->get();
     }
 }

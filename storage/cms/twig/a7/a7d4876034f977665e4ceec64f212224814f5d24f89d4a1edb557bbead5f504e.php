@@ -40,8 +40,10 @@ class __TwigTemplate_83cd8d3922a01a1a5d9d54e1425789a4eea4bf6891a91ae302db054a4dd
     <div class=\"ms-slide\">
          
         <!-- slide background -->
-        <img src=\"masterslider/blank.gif\" data-src=\"";
+        <img src=\"";
         // line 7
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/masterslider/blank.png");
+        echo "\" data-src=\"";
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/slider/slide1_football.jpg");
         echo "\" alt=\"lorem ipsum dolor sit\"/>     
          
@@ -53,8 +55,10 @@ class __TwigTemplate_83cd8d3922a01a1a5d9d54e1425789a4eea4bf6891a91ae302db054a4dd
     <div class=\"ms-slide\">
          
         <!-- slide background -->
-        <img src=\"masterslider/blank.gif\" data-src=\"";
+        <img src=\"";
         // line 17
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/masterslider/blank.png");
+        echo "\" data-src=\"";
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/slider/slide2_cricket.jpg");
         echo "\" alt=\"lorem ipsum dolor sit\"/>     
          
@@ -69,8 +73,10 @@ class __TwigTemplate_83cd8d3922a01a1a5d9d54e1425789a4eea4bf6891a91ae302db054a4dd
     <div class=\"ms-slide\">
          
         <!-- slide background -->
-        <img src=\"masterslider/blank.gif\" data-src=\"";
+        <img src=\"";
         // line 30
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/masterslider/blank.png");
+        echo "\" data-src=\"";
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/slider/slide3_kick.jpg");
         echo "\" alt=\"lorem ipsum dolor sit\"/>     
         
@@ -94,7 +100,7 @@ class __TwigTemplate_83cd8d3922a01a1a5d9d54e1425789a4eea4bf6891a91ae302db054a4dd
 
     public function getDebugInfo()
     {
-        return array (  74 => 30,  58 => 17,  45 => 7,  37 => 1,);
+        return array (  78 => 30,  60 => 17,  45 => 7,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -105,7 +111,7 @@ class __TwigTemplate_83cd8d3922a01a1a5d9d54e1425789a4eea4bf6891a91ae302db054a4dd
     <div class=\"ms-slide\">
          
         <!-- slide background -->
-        <img src=\"masterslider/blank.gif\" data-src=\"{{ 'assets/images/slider/slide1_football.jpg'|theme }}\" alt=\"lorem ipsum dolor sit\"/>     
+        <img src=\"{{ 'assets/masterslider/blank.png'|theme }}\" data-src=\"{{ 'assets/images/slider/slide1_football.jpg'|theme }}\" alt=\"lorem ipsum dolor sit\"/>     
          
          
     </div>
@@ -115,7 +121,7 @@ class __TwigTemplate_83cd8d3922a01a1a5d9d54e1425789a4eea4bf6891a91ae302db054a4dd
     <div class=\"ms-slide\">
          
         <!-- slide background -->
-        <img src=\"masterslider/blank.gif\" data-src=\"{{ 'assets/images/slider/slide2_cricket.jpg'|theme }}\" alt=\"lorem ipsum dolor sit\"/>     
+        <img src=\"{{ 'assets/masterslider/blank.png'|theme }}\" data-src=\"{{ 'assets/images/slider/slide2_cricket.jpg'|theme }}\" alt=\"lorem ipsum dolor sit\"/>     
          
          
         <!-- linked slide -->
@@ -128,7 +134,7 @@ class __TwigTemplate_83cd8d3922a01a1a5d9d54e1425789a4eea4bf6891a91ae302db054a4dd
     <div class=\"ms-slide\">
          
         <!-- slide background -->
-        <img src=\"masterslider/blank.gif\" data-src=\"{{ 'assets/images/slider/slide3_kick.jpg'|theme }}\" alt=\"lorem ipsum dolor sit\"/>     
+        <img src=\"{{ 'assets/masterslider/blank.png'|theme }}\" data-src=\"{{ 'assets/images/slider/slide3_kick.jpg'|theme }}\" alt=\"lorem ipsum dolor sit\"/>     
         
          
     </div>

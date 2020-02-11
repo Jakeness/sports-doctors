@@ -43,7 +43,7 @@ class __TwigTemplate_c3e03cddc597ee59a8b006c6ad3f0a2d4a45f009b4a80f5187656f34a3d
         // line 6
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/css/styles.css");
         echo "\" rel=\"stylesheet\">
-<link href=\"http://websiteglobal.com.au/2015/css/websiteBy.css\" rel=\"stylesheet\">
+<!-- <link href=\"http://websiteglobal.com.au/2015/css/websiteBy.css\" rel=\"stylesheet\"> -->
 
 <!-- Bootstrap -->
 <link --mime-type='text/css' href=\"";
@@ -75,7 +75,7 @@ class __TwigTemplate_c3e03cddc597ee59a8b006c6ad3f0a2d4a45f009b4a80f5187656f34a3d
  
 <!-- Latest version of jQuery from Google CDN -->
 <!-- You can remove it if jQuery is already included. -->
-<script src=\"http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js\"></script>
+<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js\"></script>
  
 <!-- MasterSlider main JS file -->
 <script src=\"";
@@ -107,7 +107,7 @@ class __TwigTemplate_c3e03cddc597ee59a8b006c6ad3f0a2d4a45f009b4a80f5187656f34a3d
 
 <!-- STYLES -->
 <link --mime-type='text/css' href=\"{{ 'assets/css/styles.css'|theme }}\" rel=\"stylesheet\">
-<link href=\"http://websiteglobal.com.au/2015/css/websiteBy.css\" rel=\"stylesheet\">
+<!-- <link href=\"http://websiteglobal.com.au/2015/css/websiteBy.css\" rel=\"stylesheet\"> -->
 
 <!-- Bootstrap -->
 <link --mime-type='text/css' href=\"{{ 'assets/css/bootstrap.min.css'|theme }}\" rel=\"stylesheet\">
@@ -130,7 +130,7 @@ class __TwigTemplate_c3e03cddc597ee59a8b006c6ad3f0a2d4a45f009b4a80f5187656f34a3d
  
 <!-- Latest version of jQuery from Google CDN -->
 <!-- You can remove it if jQuery is already included. -->
-<script src=\"http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js\"></script>
+<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js\"></script>
  
 <!-- MasterSlider main JS file -->
 <script src=\"{{ 'assets/masterslider/masterslider.min.js'|theme }}\"></script>", "/Users/jakemcleod/Documents/Website Global/GIT/sports-doctors/themes/sports-doctors/partials/headerScript.htm", "");

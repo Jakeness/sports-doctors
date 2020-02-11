@@ -81,7 +81,7 @@ class __TwigTemplate_8b494b87fbba07e41683d32dab99132a58856d92194fe75c0a0a046cbb0
             <div class=\"container\">
                 <div class=\"boxBorder\">
                     <div class=\"col-sm-12 col-md-6 col-lg-4 box\">
-                        <form name=\"catcustomcontentform52505\" id=\"directory\" method=\"post\" onsubmit=\"return checkWholeForm52505(this)\" action=\"/Default.aspx?CCID=33152&amp;FID=210379&amp;ExcludeBoolFalse=True&amp;ID=/directory-search\">
+                        <form name=\"catcustomcontentform52505\" id=\"directory\" method=\"post\" onsubmit=\"return checkWholeForm52505(this)\" action=\"/map-test\">
                         <div class=\"webform row\">
             
                             <div class=\"col-sm-5 col-md-12\">
@@ -180,24 +180,50 @@ class __TwigTemplate_8b494b87fbba07e41683d32dab99132a58856d92194fe75c0a0a046cbb0
         <section class=\"pageContent\">
             <div class=\"container\">
                 <div class=\"row\">
-                    {module_contentholder name=\"Home Bottom Content Section\"}
+                    <div class=\"col-sm-8 col-lg-6\">
+
+    <h2>What do we do?</h2>
+
+    <p>SDrA is an association of likeminded doctors. As an organisation, we aim to:</p>
+
+    <ul>
+        <li>Promote high standards of care to the public, irrespective of position, standard</li>
+        <li>Promote education to our members and dotors in general</li>
+        <li>Promote education to the community</li>
+        <li>Promote research into injury prevention, assessment and management</li>
+        <li>Promote the use of evidence based medicine</li>
+        <li>Read further about our organisation...</li>
+    </ul>
+
+    <p><a href=\"/about\" class=\"button\">Read more about our organisation...</a></p>
+
+</div>
+
+<div class=\"col-sm-4 col-lg-6\">
+
+<div class=\"feedgrabbr_widget\" id=\"fgid_f6de9778f6cd2f864e297ec0c\"></div>
+<script> if (typeof(fg_widgets)===\"undefined\") fg_widgets = new Array();fg_widgets.push(\"fgid_f6de9778f6cd2f864e297ec0c\");</script>
+<script src=\"https://www.feedgrabbr.com/widget/fgwidget.js\"></script>
+
+</div>
                 </div>
             </div>
         </section>
         
+        
         ";
-        // line 126
+        // line 152
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("footer"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
         echo "        
 
         ";
-        // line 128
+        // line 154
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("footerScript"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 129
+        // line 155
         echo "
     </body>
 
@@ -216,7 +242,7 @@ class __TwigTemplate_8b494b87fbba07e41683d32dab99132a58856d92194fe75c0a0a046cbb0
 
     public function getDebugInfo()
     {
-        return array (  201 => 129,  197 => 128,  190 => 126,  163 => 102,  147 => 88,  143 => 87,  75 => 22,  70 => 19,  66 => 18,  60 => 14,  56 => 13,  47 => 6,  43 => 5,  37 => 1,);
+        return array (  227 => 155,  223 => 154,  216 => 152,  163 => 102,  147 => 88,  143 => 87,  75 => 22,  70 => 19,  66 => 18,  60 => 14,  56 => 13,  47 => 6,  43 => 5,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -250,7 +276,7 @@ class __TwigTemplate_8b494b87fbba07e41683d32dab99132a58856d92194fe75c0a0a046cbb0
             <div class=\"container\">
                 <div class=\"boxBorder\">
                     <div class=\"col-sm-12 col-md-6 col-lg-4 box\">
-                        <form name=\"catcustomcontentform52505\" id=\"directory\" method=\"post\" onsubmit=\"return checkWholeForm52505(this)\" action=\"/Default.aspx?CCID=33152&amp;FID=210379&amp;ExcludeBoolFalse=True&amp;ID=/directory-search\">
+                        <form name=\"catcustomcontentform52505\" id=\"directory\" method=\"post\" onsubmit=\"return checkWholeForm52505(this)\" action=\"/map-test\">
                         <div class=\"webform row\">
             
                             <div class=\"col-sm-5 col-md-12\">
@@ -341,10 +367,36 @@ class __TwigTemplate_8b494b87fbba07e41683d32dab99132a58856d92194fe75c0a0a046cbb0
         <section class=\"pageContent\">
             <div class=\"container\">
                 <div class=\"row\">
-                    {module_contentholder name=\"Home Bottom Content Section\"}
+                    <div class=\"col-sm-8 col-lg-6\">
+
+    <h2>What do we do?</h2>
+
+    <p>SDrA is an association of likeminded doctors. As an organisation, we aim to:</p>
+
+    <ul>
+        <li>Promote high standards of care to the public, irrespective of position, standard</li>
+        <li>Promote education to our members and dotors in general</li>
+        <li>Promote education to the community</li>
+        <li>Promote research into injury prevention, assessment and management</li>
+        <li>Promote the use of evidence based medicine</li>
+        <li>Read further about our organisation...</li>
+    </ul>
+
+    <p><a href=\"/about\" class=\"button\">Read more about our organisation...</a></p>
+
+</div>
+
+<div class=\"col-sm-4 col-lg-6\">
+
+<div class=\"feedgrabbr_widget\" id=\"fgid_f6de9778f6cd2f864e297ec0c\"></div>
+<script> if (typeof(fg_widgets)===\"undefined\") fg_widgets = new Array();fg_widgets.push(\"fgid_f6de9778f6cd2f864e297ec0c\");</script>
+<script src=\"https://www.feedgrabbr.com/widget/fgwidget.js\"></script>
+
+</div>
                 </div>
             </div>
         </section>
+        
         
         {% partial \"footer\" %}        
 

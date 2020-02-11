@@ -71,13 +71,9 @@ class __TwigTemplate_4aa7a1c753e6f2ed23e0a508f1769404b7dee47b75fa98174e68f59025c
         <section class=\"pageContent\">
             <div class=\"container\">
                 <div class=\"col-xs-12\">
+                  
                     ";
-        // line 25
-        $context['__cms_component_params'] = [];
-        echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("staticPage"        , $context['__cms_component_params']        );
-        unset($context['__cms_component_params']);
         // line 26
-        echo "                    ";
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
         // line 27
         echo "                </div>
@@ -121,7 +117,7 @@ class __TwigTemplate_4aa7a1c753e6f2ed23e0a508f1769404b7dee47b75fa98174e68f59025c
 
     public function getDebugInfo()
     {
-        return array (  106 => 40,  102 => 39,  95 => 37,  83 => 27,  80 => 26,  76 => 25,  65 => 17,  60 => 14,  56 => 13,  47 => 6,  43 => 5,  37 => 1,);
+        return array (  102 => 40,  98 => 39,  91 => 37,  79 => 27,  77 => 26,  65 => 17,  60 => 14,  56 => 13,  47 => 6,  43 => 5,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -150,7 +146,7 @@ class __TwigTemplate_4aa7a1c753e6f2ed23e0a508f1769404b7dee47b75fa98174e68f59025c
         <section class=\"pageContent\">
             <div class=\"container\">
                 <div class=\"col-xs-12\">
-                    {% component 'staticPage' %}
+                  
                     {% page %}
                 </div>
             </div>

@@ -4,6 +4,16 @@ fields:
         span: auto
         type: checkbox
         comment: 'Hide this location from the public'
+    slug:
+        label: slug
+        span: auto
+        readOnly: 1
+        hidden: 0
+        defaultFrom: name
+        preset:
+            field: name
+            type: slug
+        type: text
     name:
         label: 'Location Name'
         span: full
@@ -12,7 +22,7 @@ fields:
     address:
         label: Address
         type: ausaddressfinder
-        countryRestriction: au, nz
+        countryRestriction: 'au, nz'
         fieldMap:
             latitude: lat
             longitude: lng
