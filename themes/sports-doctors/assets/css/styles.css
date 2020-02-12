@@ -637,7 +637,9 @@ section.directoryForm .webform input[type="submit"]:hover, section.directoryForm
 
 /* DIRECTORY LARGE DETAILED LAYOUT  */
 
-.directoryLargeLayout ul.directory.detailed {margin: 20px 0;}
+.directoryLargeLayout ul.directory.detailed {margin: 20px 0 0 0;}
+
+.directoryLargeLayout .linkButtons {margin-top: 20px;}
 
 .directoryLargeLayout .linkButtons a.button {width: 100%; text-align: center;}
 

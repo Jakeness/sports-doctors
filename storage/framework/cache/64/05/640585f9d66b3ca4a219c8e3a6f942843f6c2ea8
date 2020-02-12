@@ -1,4 +1,4 @@
-1581399090a:1:{s:13:"directory.htm";a:10:{s:8:"fileName";s:13:"directory.htm";s:7:"content";s:2300:"title = "directory"
+1581401472a:1:{s:13:"directory.htm";a:10:{s:8:"fileName";s:13:"directory.htm";s:7:"content";s:2653:"title = "directory"
 url = "/directory/:slug"
 layout = "Inner"
 is_hidden = 0
@@ -10,6 +10,12 @@ modelKeyColumn = "slug"
 displayColumn = "name"
 notFoundMessage = "Record not found"
 ==
+<?php
+function goBack() {
+  window.history.back();
+}
+?>
+==
 {% set record = directoryDetailListing.record %}
 {% set displayColumn = directoryDetailListing.displayColumn %}
 {% set notFoundMessage = directoryDetailListing.notFoundMessage %}
@@ -19,7 +25,9 @@ notFoundMessage = "Record not found"
 
     <div class="col-sm-4">
         <h2>{{ record.doctor_name }}</h2>
-        <p><em>{{ record.practice_name }}</em></p>
+        {% if record.practice_name %}
+            <p><em>{{ record.practice_name }}</em></p>
+        {% endif %}
     
         {{ record.address_1 }}{% if record.address_2 %} / {{ record.address_2 }}{% endif %},<br />
         {{ record.city }}, {{ record.country }}, {{ record.state }},{{ record.postcode }}
@@ -38,12 +46,19 @@ notFoundMessage = "Record not found"
                 </li>
             </ul>
         {% endif %}
-        <div class="linkButtons row pt-3">
-            <div class="col-xs-6 email show{tag_show email}"><a href="mailto:{tag_email}" class="button">Email</a></div>
-            <div class="col-xs-6 website show{tag_show webaite}"><a href="http://{tag_website (ie www.)}" target="_blank" class="button">Website</a></div>
-        </div>
+        {% if (record.email or record.website) %}
+            <div class="linkButtons row pt-3">
+            {% if record.email %}
+                <div class="col-xs-6 email"><a href="mailto:{{ record.email }}" class="button">Email</a></div>
+            {% endif %}
+            {% if record.website %}
+                <div class="col-xs-6 website"><a href="{{ record.website }}" target="_blank" class="button">Website</a></div>
+            {% endif %}
+            </div>
+        {% endif %}
 
         <div class="goBack hidden-xs" style="margin-top: 20px;"><p>{module_goback,Go Back}</p></div>
+        <button onclick="goBack()">Go Back</button>
 
     </div>
     
@@ -51,7 +66,7 @@ notFoundMessage = "Record not found"
         <p>{module_webappsmap id="33152" filter="item" googlekey="AIzaSyB_pPFF55x8Z-b1K9PjsrXX0BM0vXyKGHc" itemId="{tag_itemid}"}</p>
     </div>
 
-    <div class="col-xs-12 goBack mobile hidden-sm hidden-md hidden-lg" style="margin-top: 20px;"><p>{module_goback,Go Back}</p></div>
+    <div class="col-xs-12 goBack mobile hidden-sm hidden-md hidden-lg" style="margin-top: 20px;"><p><a href="{{ go_back }}">Go Back</a></p></div>
 
 </div>
     
@@ -61,7 +76,7 @@ notFoundMessage = "Record not found"
     
 {% else %}
     {{ notFoundMessage }}
-{% endif %}";s:5:"mtime";i:1581396659;s:6:"markup";s:2003:"{% set record = directoryDetailListing.record %}
+{% endif %}";s:5:"mtime";i:1581400870;s:6:"markup";s:2295:"{% set record = directoryDetailListing.record %}
 {% set displayColumn = directoryDetailListing.displayColumn %}
 {% set notFoundMessage = directoryDetailListing.notFoundMessage %}
 
@@ -70,7 +85,9 @@ notFoundMessage = "Record not found"
 
     <div class="col-sm-4">
         <h2>{{ record.doctor_name }}</h2>
-        <p><em>{{ record.practice_name }}</em></p>
+        {% if record.practice_name %}
+            <p><em>{{ record.practice_name }}</em></p>
+        {% endif %}
     
         {{ record.address_1 }}{% if record.address_2 %} / {{ record.address_2 }}{% endif %},<br />
         {{ record.city }}, {{ record.country }}, {{ record.state }},{{ record.postcode }}
@@ -89,12 +106,19 @@ notFoundMessage = "Record not found"
                 </li>
             </ul>
         {% endif %}
-        <div class="linkButtons row pt-3">
-            <div class="col-xs-6 email show{tag_show email}"><a href="mailto:{tag_email}" class="button">Email</a></div>
-            <div class="col-xs-6 website show{tag_show webaite}"><a href="http://{tag_website (ie www.)}" target="_blank" class="button">Website</a></div>
-        </div>
+        {% if (record.email or record.website) %}
+            <div class="linkButtons row pt-3">
+            {% if record.email %}
+                <div class="col-xs-6 email"><a href="mailto:{{ record.email }}" class="button">Email</a></div>
+            {% endif %}
+            {% if record.website %}
+                <div class="col-xs-6 website"><a href="{{ record.website }}" target="_blank" class="button">Website</a></div>
+            {% endif %}
+            </div>
+        {% endif %}
 
         <div class="goBack hidden-xs" style="margin-top: 20px;"><p>{module_goback,Go Back}</p></div>
+        <button onclick="goBack()">Go Back</button>
 
     </div>
     
@@ -102,7 +126,7 @@ notFoundMessage = "Record not found"
         <p>{module_webappsmap id="33152" filter="item" googlekey="AIzaSyB_pPFF55x8Z-b1K9PjsrXX0BM0vXyKGHc" itemId="{tag_itemid}"}</p>
     </div>
 
-    <div class="col-xs-12 goBack mobile hidden-sm hidden-md hidden-lg" style="margin-top: 20px;"><p>{module_goback,Go Back}</p></div>
+    <div class="col-xs-12 goBack mobile hidden-sm hidden-md hidden-lg" style="margin-top: 20px;"><p><a href="{{ go_back }}">Go Back</a></p></div>
 
 </div>
     
@@ -112,4 +136,6 @@ notFoundMessage = "Record not found"
     
 {% else %}
     {{ notFoundMessage }}
-{% endif %}";s:4:"code";N;s:5:"title";s:9:"directory";s:3:"url";s:16:"/directory/:slug";s:6:"layout";s:5:"Inner";s:9:"is_hidden";s:1:"0";s:37:"builderDetails directoryDetailListing";a:5:{s:10:"modelClass";s:45:"WebsiteGlobal\AusStoreLocator\Models\Location";s:15:"identifierValue";s:11:"{{ :slug }}";s:14:"modelKeyColumn";s:4:"slug";s:13:"displayColumn";s:4:"name";s:15:"notFoundMessage";s:16:"Record not found";}}}
+{% endif %}";s:4:"code";s:48:"function goBack() {
+  window.history.back();
+}";s:5:"title";s:9:"directory";s:3:"url";s:16:"/directory/:slug";s:6:"layout";s:5:"Inner";s:9:"is_hidden";s:1:"0";s:37:"builderDetails directoryDetailListing";a:5:{s:10:"modelClass";s:45:"WebsiteGlobal\AusStoreLocator\Models\Location";s:15:"identifierValue";s:11:"{{ :slug }}";s:14:"modelKeyColumn";s:4:"slug";s:13:"displayColumn";s:4:"name";s:15:"notFoundMessage";s:16:"Record not found";}}}
