@@ -1,4 +1,4 @@
-1581401472a:1:{s:13:"directory.htm";a:10:{s:8:"fileName";s:13:"directory.htm";s:7:"content";s:2653:"title = "directory"
+1581575128a:1:{s:13:"directory.htm";a:10:{s:8:"fileName";s:13:"directory.htm";s:7:"content";s:2286:"title = "directory"
 url = "/directory/:slug"
 layout = "Inner"
 is_hidden = 0
@@ -9,12 +9,6 @@ identifierValue = "{{ :slug }}"
 modelKeyColumn = "slug"
 displayColumn = "name"
 notFoundMessage = "Record not found"
-==
-<?php
-function goBack() {
-  window.history.back();
-}
-?>
 ==
 {% set record = directoryDetailListing.record %}
 {% set displayColumn = directoryDetailListing.displayColumn %}
@@ -57,16 +51,11 @@ function goBack() {
             </div>
         {% endif %}
 
-        <div class="goBack hidden-xs" style="margin-top: 20px;"><p>{module_goback,Go Back}</p></div>
-        <button onclick="goBack()">Go Back</button>
-
     </div>
     
     <div class="col-sm-8">
         <p>{module_webappsmap id="33152" filter="item" googlekey="AIzaSyB_pPFF55x8Z-b1K9PjsrXX0BM0vXyKGHc" itemId="{tag_itemid}"}</p>
     </div>
-
-    <div class="col-xs-12 goBack mobile hidden-sm hidden-md hidden-lg" style="margin-top: 20px;"><p><a href="{{ go_back }}">Go Back</a></p></div>
 
 </div>
     
@@ -76,7 +65,7 @@ function goBack() {
     
 {% else %}
     {{ notFoundMessage }}
-{% endif %}";s:5:"mtime";i:1581400870;s:6:"markup";s:2295:"{% set record = directoryDetailListing.record %}
+{% endif %}";s:5:"mtime";i:1581400912;s:6:"markup";s:1989:"{% set record = directoryDetailListing.record %}
 {% set displayColumn = directoryDetailListing.displayColumn %}
 {% set notFoundMessage = directoryDetailListing.notFoundMessage %}
 
@@ -117,16 +106,11 @@ function goBack() {
             </div>
         {% endif %}
 
-        <div class="goBack hidden-xs" style="margin-top: 20px;"><p>{module_goback,Go Back}</p></div>
-        <button onclick="goBack()">Go Back</button>
-
     </div>
     
     <div class="col-sm-8">
         <p>{module_webappsmap id="33152" filter="item" googlekey="AIzaSyB_pPFF55x8Z-b1K9PjsrXX0BM0vXyKGHc" itemId="{tag_itemid}"}</p>
     </div>
-
-    <div class="col-xs-12 goBack mobile hidden-sm hidden-md hidden-lg" style="margin-top: 20px;"><p><a href="{{ go_back }}">Go Back</a></p></div>
 
 </div>
     
@@ -136,6 +120,4 @@ function goBack() {
     
 {% else %}
     {{ notFoundMessage }}
-{% endif %}";s:4:"code";s:48:"function goBack() {
-  window.history.back();
-}";s:5:"title";s:9:"directory";s:3:"url";s:16:"/directory/:slug";s:6:"layout";s:5:"Inner";s:9:"is_hidden";s:1:"0";s:37:"builderDetails directoryDetailListing";a:5:{s:10:"modelClass";s:45:"WebsiteGlobal\AusStoreLocator\Models\Location";s:15:"identifierValue";s:11:"{{ :slug }}";s:14:"modelKeyColumn";s:4:"slug";s:13:"displayColumn";s:4:"name";s:15:"notFoundMessage";s:16:"Record not found";}}}
+{% endif %}";s:4:"code";N;s:5:"title";s:9:"directory";s:3:"url";s:16:"/directory/:slug";s:6:"layout";s:5:"Inner";s:9:"is_hidden";s:1:"0";s:37:"builderDetails directoryDetailListing";a:5:{s:10:"modelClass";s:45:"WebsiteGlobal\AusStoreLocator\Models\Location";s:15:"identifierValue";s:11:"{{ :slug }}";s:14:"modelKeyColumn";s:4:"slug";s:13:"displayColumn";s:4:"name";s:15:"notFoundMessage";s:16:"Record not found";}}}

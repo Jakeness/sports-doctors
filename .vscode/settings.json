@@ -1,0 +1,29 @@
+{
+    "deploy": {
+        "packages": [
+            {
+                "name": "Sports Doctors",
+                
+                "button": {
+                    "text": "Deploy to 'Server'",
+                    "tooltip": "Click here to deploy to the target...",
+
+                    "targets": [ "targets" ]
+                }
+            }
+        ],
+
+        "targets": [
+            {
+                "type": "ftp",
+                "name": "Sports Doctors",
+                "description": "Sports Doctors",
+
+                "dir": "/public_html/",
+                "host": "ftp:66.199.141.102", "port": 21,
+                "secure": false,
+                "user": "sp0rtsd0ct0rs", "password": "99rP75GGM90X!"
+            }
+        ]
+    }
+}

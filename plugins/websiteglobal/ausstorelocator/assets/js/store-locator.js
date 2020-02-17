@@ -21,7 +21,7 @@ var markers = [];
 var infoWindow;
 var locationList = '';
 var mapEl = document.getElementById("map");
-var zipEl = parent.document.getElementById("Postcode");
+var zipEl = parent.document.getElementById('Postcode');
 var radiusEl = parent.document.getElementById('Distance');
 var listEl = parent.document.getElementById('locations');
 var searchButtonEl = parent.document.getElementById('searchMap');

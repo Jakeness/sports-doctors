@@ -41,15 +41,10 @@ class __TwigTemplate_c3e03cddc597ee59a8b006c6ad3f0a2d4a45f009b4a80f5187656f34a3d
 <!-- STYLES -->
 <link --mime-type='text/css' href=\"";
         // line 6
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/css/styles.css");
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter([0 => "assets/css/styles.css", 1 => "assets/css/bootstrap.min.css", 2 => "assets/masterslider/style/masterslider.css", 3 => "assets/masterslider/skins/default/style.css"]);
+        // line 11
         echo "\" rel=\"stylesheet\">
 <!-- <link href=\"http://websiteglobal.com.au/2015/css/websiteBy.css\" rel=\"stylesheet\"> -->
-
-<!-- Bootstrap -->
-<link --mime-type='text/css' href=\"";
-        // line 10
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/css/bootstrap.min.css");
-        echo "\" rel=\"stylesheet\">
 
 <!-- GOOGLE FONT -->
 <link href=\"https://fonts.googleapis.com/css?family=Ubuntu:300,400,700\" rel=\"stylesheet\">
@@ -60,18 +55,6 @@ class __TwigTemplate_c3e03cddc597ee59a8b006c6ad3f0a2d4a45f009b4a80f5187656f34a3d
     <script src=\"https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js\"></script>
     <script src=\"https://oss.maxcdn.com/respond/1.4.2/respond.min.js\"></script>
 <![endif]-->
-
-<!-- Base MasterSlider style sheet -->
-<link --mime-type='text/css' rel=\"stylesheet\" href=\"";
-        // line 23
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/masterslider/style/masterslider.css");
-        echo "\" />
- 
-<!-- MasterSlider default skin -->
-<link --mime-type='text/css' rel=\"stylesheet\" href=\"";
-        // line 26
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/masterslider/skins/default/style.css");
-        echo "\" />
  
 <!-- Latest version of jQuery from Google CDN -->
 <!-- You can remove it if jQuery is already included. -->
@@ -79,7 +62,7 @@ class __TwigTemplate_c3e03cddc597ee59a8b006c6ad3f0a2d4a45f009b4a80f5187656f34a3d
  
 <!-- MasterSlider main JS file -->
 <script src=\"";
-        // line 33
+        // line 29
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/masterslider/masterslider.min.js");
         echo "\"></script>";
     }
@@ -96,7 +79,7 @@ class __TwigTemplate_c3e03cddc597ee59a8b006c6ad3f0a2d4a45f009b4a80f5187656f34a3d
 
     public function getDebugInfo()
     {
-        return array (  83 => 33,  73 => 26,  67 => 23,  51 => 10,  44 => 6,  37 => 1,);
+        return array (  66 => 29,  46 => 11,  44 => 6,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -106,11 +89,13 @@ class __TwigTemplate_c3e03cddc597ee59a8b006c6ad3f0a2d4a45f009b4a80f5187656f34a3d
 <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
 
 <!-- STYLES -->
-<link --mime-type='text/css' href=\"{{ 'assets/css/styles.css'|theme }}\" rel=\"stylesheet\">
+<link --mime-type='text/css' href=\"{{ [
+    'assets/css/styles.css',
+    'assets/css/bootstrap.min.css',
+    'assets/masterslider/style/masterslider.css',
+    'assets/masterslider/skins/default/style.css'
+]|theme }}\" rel=\"stylesheet\">
 <!-- <link href=\"http://websiteglobal.com.au/2015/css/websiteBy.css\" rel=\"stylesheet\"> -->
-
-<!-- Bootstrap -->
-<link --mime-type='text/css' href=\"{{ 'assets/css/bootstrap.min.css'|theme }}\" rel=\"stylesheet\">
 
 <!-- GOOGLE FONT -->
 <link href=\"https://fonts.googleapis.com/css?family=Ubuntu:300,400,700\" rel=\"stylesheet\">
@@ -121,12 +106,6 @@ class __TwigTemplate_c3e03cddc597ee59a8b006c6ad3f0a2d4a45f009b4a80f5187656f34a3d
     <script src=\"https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js\"></script>
     <script src=\"https://oss.maxcdn.com/respond/1.4.2/respond.min.js\"></script>
 <![endif]-->
-
-<!-- Base MasterSlider style sheet -->
-<link --mime-type='text/css' rel=\"stylesheet\" href=\"{{ 'assets/masterslider/style/masterslider.css'|theme }}\" />
- 
-<!-- MasterSlider default skin -->
-<link --mime-type='text/css' rel=\"stylesheet\" href=\"{{ 'assets/masterslider/skins/default/style.css'|theme }}\" />
  
 <!-- Latest version of jQuery from Google CDN -->
 <!-- You can remove it if jQuery is already included. -->

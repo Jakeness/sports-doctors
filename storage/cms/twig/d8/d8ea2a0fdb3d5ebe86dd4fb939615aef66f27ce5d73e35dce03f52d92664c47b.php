@@ -144,19 +144,11 @@ class __TwigTemplate_a3ea3f95064cf7a06abb7064f298ebc66d51c0c45f881615343f291a4c0
             }
             // line 41
             echo "
-        <div class=\"goBack hidden-xs\" style=\"margin-top: 20px;\"><p>{module_goback,Go Back}</p></div>
-        <button onclick=\"goBack()\">Go Back</button>
-
     </div>
     
     <div class=\"col-sm-8\">
         <p>{module_webappsmap id=\"33152\" filter=\"item\" googlekey=\"AIzaSyB_pPFF55x8Z-b1K9PjsrXX0BM0vXyKGHc\" itemId=\"{tag_itemid}\"}</p>
     </div>
-
-    <div class=\"col-xs-12 goBack mobile hidden-sm hidden-md hidden-lg\" style=\"margin-top: 20px;\"><p><a href=\"";
-            // line 51
-            echo twig_escape_filter($this->env, ($context["go_back"] ?? null), "html", null, true);
-            echo "\">Go Back</a></p></div>
 
 </div>
     
@@ -166,7 +158,7 @@ class __TwigTemplate_a3ea3f95064cf7a06abb7064f298ebc66d51c0c45f881615343f291a4c0
     
 ";
         } else {
-            // line 60
+            // line 55
             echo "    ";
             echo twig_escape_filter($this->env, ($context["notFoundMessage"] ?? null), "html", null, true);
             echo "
@@ -186,7 +178,7 @@ class __TwigTemplate_a3ea3f95064cf7a06abb7064f298ebc66d51c0c45f881615343f291a4c0
 
     public function getDebugInfo()
     {
-        return array (  170 => 60,  158 => 51,  146 => 41,  142 => 39,  136 => 37,  133 => 36,  127 => 34,  125 => 33,  122 => 32,  119 => 31,  113 => 27,  107 => 25,  105 => 24,  102 => 23,  96 => 22,  94 => 21,  89 => 18,  87 => 17,  76 => 15,  68 => 14,  65 => 13,  59 => 11,  57 => 10,  53 => 9,  46 => 5,  43 => 4,  41 => 3,  39 => 2,  37 => 1,);
+        return array (  162 => 55,  146 => 41,  142 => 39,  136 => 37,  133 => 36,  127 => 34,  125 => 33,  122 => 32,  119 => 31,  113 => 27,  107 => 25,  105 => 24,  102 => 23,  96 => 22,  94 => 21,  89 => 18,  87 => 17,  76 => 15,  68 => 14,  65 => 13,  59 => 11,  57 => 10,  53 => 9,  46 => 5,  43 => 4,  41 => 3,  39 => 2,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -232,16 +224,11 @@ class __TwigTemplate_a3ea3f95064cf7a06abb7064f298ebc66d51c0c45f881615343f291a4c0
             </div>
         {% endif %}
 
-        <div class=\"goBack hidden-xs\" style=\"margin-top: 20px;\"><p>{module_goback,Go Back}</p></div>
-        <button onclick=\"goBack()\">Go Back</button>
-
     </div>
     
     <div class=\"col-sm-8\">
         <p>{module_webappsmap id=\"33152\" filter=\"item\" googlekey=\"AIzaSyB_pPFF55x8Z-b1K9PjsrXX0BM0vXyKGHc\" itemId=\"{tag_itemid}\"}</p>
     </div>
-
-    <div class=\"col-xs-12 goBack mobile hidden-sm hidden-md hidden-lg\" style=\"margin-top: 20px;\"><p><a href=\"{{ go_back }}\">Go Back</a></p></div>
 
 </div>
     

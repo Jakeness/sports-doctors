@@ -105,4 +105,6 @@
   'WebsiteGlobal\\AusStoreLocator\\FormWidgets\\AusAddressFinder' => 'plugins/websiteglobal/ausstorelocator/formwidgets/AusAddressFinder.php',
   'ADemin\\StoreLocator\\Models\\Settings' => 'plugins/ademin/storelocator/models/Settings.php',
   'RainLab\\Builder\\Classes\\ComponentHelper' => 'plugins/rainlab/builder/classes/ComponentHelper.php',
+  'inetis\\cloudwaysdeploy\\Plugin' => 'plugins/inetis/cloudwaysdeploy/Plugin.php',
+  'Inetis\\CloudwaysDeploy\\Models\\Settings' => 'plugins/inetis/cloudwaysdeploy/models/Settings.php',
 );
